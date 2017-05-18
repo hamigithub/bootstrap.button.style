@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<script src="js/jquery/2.0.0/jquery.min.js"></script>
+    <link href="css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap/3.3.6/bootstrap.min.js"></script>
+	<title>demo</title>
+		<style>	
+/*————————————————————————————————————bootstrap下拉导航begin————————————————————————————————————*/
+        .downa-wrap{
+            font-size: 1.5rem;
+            background: #f9f9f9;
+            padding-top:5px;
+        }
+        .navbar {
+            border-radius: 0px;
+            margin-bottom: 0;
+            min-height: 54px;
+        }
+        .navbar-default {
+            background-color: #f9f9f9;
+            border-color: transparent;
+        }
+        .navbar-default .navbar-nav>li>button
+        {
+            color: #000;
+            background: #fff;
+            margin: 7px;
+            box-shadow: 0px 0px 5px #ccc;
+        }
+        .btn:focus,
+        .btn:active:focus,
+        .btn.active:focus,
+        .btn.focus,
+        .btn:active.focus,
+        .btn.active.focus {
+    		outline: none;
+		}
+		.navbar-default .navbar-nav>li>button:hover{
+			color: #fff;
+			background: #1d7ad9;
+		}
+
+		.button1{
+			text-align: center;
+		}
+        @media (min-width: 768px) {
+            .nav{
+                float: right;
+                margin: 0;
+            }
+        }
+        .navbar-nav{
+            margin: 0;
+        }
+/*————————————————————————————————————bootstrap下拉导航end————————————————————————————————————*/
+
+		</style>
+</head>
+<body>
+<!--bootstrap下拉导航begin-->
+<div class="downa-wrap">
+    <div class="container">
+        <div class="row downa">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="navbar-header nav navbar-nav nav-css">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+                        <span class="sr-only">切换导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse nav-css" id="example-navbar-collapse">
+                    <div class="buttons">
+                        <ul class="nav navbar-nav">
+                            <li class="button1"><button class="btn btn-custom">首页</button></li>
+                            <li class="button1"><button class="btn btn-custom">在线定制</button></li>
+                            <li class="button1"><button class="btn btn-custom">标准箱</button></li>
+                            <li class="button1"><button class="btn btn-custom">品质保障</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+<!--bootstrap下拉导航end-->
+
+</body>
+</html>
