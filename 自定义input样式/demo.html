@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<script src="js/jquery/2.0.0/jquery.min.js"></script>
+    <link href="css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap/3.3.6/bootstrap.min.js"></script>
+	<title>demo</title>
+	<style>	
+/*————————————————————————————————————bootstrap下拉导航begin————————————————————————————————————*/
+		input[type='radio'].radio {
+			opacity:0; 
+			display: none;
+			height:20px; 
+		}
+        label.radio {
+        	background:url(btned.png) no-repeat; 
+        	height:20px; 
+        	padding-left:25px;
+        	float: left;
+        }
+        input[type='radio'].radio:checked + .radio {
+        	background:url(btn.png) no-repeat;
+        }
+        input{
+        	display: inline-block;
+
+        }
+        .checkbox+.checkbox, .radio+.radio{
+        	margin: 0 0 0 40px;
+        }
+
+    .content-box{
+        box-sizing:content-box;
+        -moz-box-sizing:content-box;
+        width: 100px;
+        height: 100px;
+        padding: 20px;
+        border: 5px solid #E6A43F;
+        background: blue;
+    }
+    .padding-box{
+        box-sizing:padding-box;
+        -moz-box-sizing:padding-box;
+        width: 100px;
+        height: 100px;
+        padding: 20px;
+        border: 5px solid #186645;
+        background: red;                
+    }
+    .border-box{
+        box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        width: 100px;
+        height: 100px;
+        padding: 20px;
+        border: 5px solid #3DA3EF;
+        background: yellow;
+    }
+	</style>
+</head>
+<body>
+<form action="">
+    <input type="radio" name="1" id="a" value="p" class="radio"><label for="a" class="radio">对口箱</label>
+    <input type="radio" name="1" id="b" value="i" class="radio"><label for="b" class="radio" >飞机盒</label>
+    <input type="radio" name="1" id="c" value="g" class="radio"><label for="c" class="radio" >天地盖</label>
+</form>
+</body>
+</html>
