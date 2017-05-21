@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>纯css实现下拉菜单</title>  
+    <style>  
+
+    	*{
+    		margin: 0 auto;
+    		padding: 0;
+    		max-width: 768px;
+    	}
+  		
+		.select-wrap{
+			font-size: 0;
+		}
+		
+  		.styled-select {
+    		width: 33.33%;
+    		height: 50px;
+    		background: url(jiant.png) no-repeat 98% 50%;/* 改变下拉箭头，使用bg实现*/
+    		display: inline-block;
+		}
+
+		.styled-select select {   
+    		background: transparent;   
+    		width: 100%;   
+    		padding-left: 1%;   
+    		font-size: 16px;   
+    		border: 1px solid #ccc;   
+    		height: 50px;   
+    		color: #9d9d9d;
+    		-webkit-appearance: none; 
+    		outline-color:#ccc;
+		}
+
+    </style>  
+</head>  
+  
+<body> 
+		<div class="select-wrap">
+			<div class="styled-select">
+ 				<select>
+ 					<option>病人情况</option>
+ 					<option>还能抢救</option>
+ 				</select>
+			</div>
+				<div class="styled-select">
+ 				<select>
+ 					<option>病人情况</option>
+ 					<option>还能抢救</option>
+ 				</select>
+			</div>
+				<div class="styled-select">
+ 				<select>
+ 					<option>病人情况</option>
+ 					<option>还能抢救</option>
+ 				</select>
+			</div>
+		</div><!-- 下拉表 -->
+</body>  
+</html>  
